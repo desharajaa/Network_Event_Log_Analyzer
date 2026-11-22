@@ -1,0 +1,20 @@
+{
+  "name": "network-event-log-analyzer",
+  "version": "1.0.0",
+  "description": "Full-Stack Network Event Log Analyzer using React.js, Express.js, MongoDB, Regex, and Finite State Machine (FSM)",
+  "scripts": {
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test"
+  },
+  "keywords": [
+    "network-security",
+    "finite-state-machine",
+    "automata-theory",
+    "full-stack",
+    "mern"
+  ],
+  "author": "Academic Project",
+  "license": "MIT"
+}

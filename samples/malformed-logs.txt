@@ -1,0 +1,26 @@
+# Test Suite: Invalid and Malformed Network Event Logs
+# Designed to verify regex and semantic parser rejection logic
+
+# 1. Invalid IPv4 Octet (> 255)
+2026-11-13 10:00:01 IP=300.168.1.1 USER=admin STATUS=SUCCESS
+
+# 2. Invalid IPv4 Octet with leading zero
+2026-11-13 10:01:00 IP=192.168.01.1 USER=root STATUS=FAILED
+
+# 3. Invalid Calendar Month (13)
+2026-13-10 10:02:00 IP=10.0.0.1 USER=guest STATUS=FAILED
+
+# 4. Invalid Day for non-leap February (2025-02-29)
+2025-02-29 10:03:00 IP=10.0.0.2 USER=john STATUS=SUCCESS
+
+# 5. Invalid Hour (25:00:00)
+2026-11-13 25:00:01 IP=172.16.0.5 USER=analyst STATUS=SUCCESS
+
+# 6. Missing required USER tag
+2026-11-13 10:04:00 IP=192.168.1.50 STATUS=FAILED
+
+# 7. Missing required IP tag
+2026-11-13 10:05:00 USER=developer STATUS=SUCCESS
+
+# 8. Unsupported status value (PENDING instead of SUCCESS or FAILED)
+2026-11-13 10:06:00 IP=192.168.1.99 USER=tester STATUS=PENDING

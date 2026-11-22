@@ -1,0 +1,31 @@
+{
+  "name": "network-event-log-analyzer-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Network Event Log Analyzer using Express, MongoDB, Regex, and Finite State Machine (FSM)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "network-logs",
+    "finite-state-machine",
+    "regex",
+    "express",
+    "mongodb",
+    "cybersecurity"
+  ],
+  "author": "Academic Project",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.8.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
