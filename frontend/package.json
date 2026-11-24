@@ -1,7 +1,8 @@
+
 {
-  "name": "network-event-log-analyzer-frontend",
-  "private": true,
+"name": "network-event-log-analyzer-frontend",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
